@@ -23,6 +23,7 @@ const StyledExplore = styled.div`
     justify-content: center;
     padding-left: 50px;
     gap: 20px;
+    position: relative;
   }
   .title {
     font-weight: 400;
@@ -34,8 +35,7 @@ const StyledExplore = styled.div`
     transform: rotate(-90deg);
     padding: 90px 0;
     position: absolute;
-    top: 1;
-    left: 6%;
+    left: -5%;
   }
   .item {
     display: flex;

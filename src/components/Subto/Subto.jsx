@@ -1,6 +1,8 @@
 import { Button } from "components/Button";
 import { styled } from "styled-components";
 import fil from "assets/sub/filter.svg";
+import { CardSub } from "components/CardSub";
+import sub0 from "assets/sub/sub0.svg";
 
 const StyledSub = styled.div`
   padding: 0 10%;
@@ -60,6 +62,14 @@ export const Subto = () => {
           <img src={fil} alt="filter icon" /> Filter
         </Button>
       </div>
+      <CardSub
+        name={"Adicolor Classics Joggers"}
+        item={sub0}
+        category={"Dress"}
+        price={63.85}
+        tag={"Hot"}
+        bgColor={"#FF6F61"}
+      />
     </StyledSub>
   );
 };
