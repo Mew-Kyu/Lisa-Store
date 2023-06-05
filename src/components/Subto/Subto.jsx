@@ -24,6 +24,11 @@ const StyledSub = styled.div`
     font-size: 16px;
     text-transform: capitalize;
     color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  .m-title:hover {
+    transition: 0.3s;
+    color: #ff6f61;
   }
   .active {
     color: #000;
