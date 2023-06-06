@@ -10,7 +10,7 @@ const StyledAds = styled.div`
   background: #000;
   display: flex;
   img {
-    width: 60%;
+    width: 55%;
     height: 100%;
   }
   .logo {
@@ -22,6 +22,7 @@ const StyledAds = styled.div`
   }
   .content {
     width: 30%;
+    padding-top: 6%;
     display: flex;
     flex-direction: column;
     justify-content: center;
