@@ -9,6 +9,7 @@ const StyledAds = styled.div`
   height: 776px;
   background: #000;
   display: flex;
+  position: relative;
   img {
     width: 55%;
     height: 100%;
