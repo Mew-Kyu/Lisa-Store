@@ -2,7 +2,7 @@ import { Header } from "components/Header";
 import { styled } from "styled-components";
 
 const LayoutStyled = styled.div`
-  overflow-x: hidden;
+  overflow: auto;
   font-family: "Roboto";
 `;
 

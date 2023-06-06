@@ -33,6 +33,7 @@ const HeaderStyled = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
   }
   .label {
     font-style: normal;
@@ -44,6 +45,16 @@ const HeaderStyled = styled.div`
     bottom: 0;
     margin-top: 10px;
     border: 1px solid #e3e3e3;
+  }
+  .shop:hover,
+  .acc:hover {
+    span {
+      color: #ff6f61;
+    }
+    svg {
+      filter: invert(52%) sepia(29%) saturate(1083%) hue-rotate(316deg)
+        brightness(101%) contrast(101%);
+    }
   }
 `;
 export const Header = () => {
