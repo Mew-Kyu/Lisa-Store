@@ -1,3 +1,4 @@
+import BannerAds from "components/BannerAds";
 import Collections from "components/Collections";
 import Explore from "components/Explore";
 import Subto from "components/Subto";
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Collections />
       <Explore />
       <Subto />
+      <BannerAds />
     </StoreLayout>
   );
 };

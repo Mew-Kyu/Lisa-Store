@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   img {
     margin-right: 8px;
   }
+  cursor: pointer;
 `;
 export const Button = ({
   label,
