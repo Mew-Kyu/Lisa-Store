@@ -49,6 +49,5 @@ Button.defaultProps = {
   textColor: "white",
   width: "128px",
   height: "46px",
-  borderRadius: "40px",
   fontSize: 16,
 };

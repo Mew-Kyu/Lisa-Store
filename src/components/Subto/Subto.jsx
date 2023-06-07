@@ -54,6 +54,66 @@ const StyledSub = styled.div`
 `;
 
 export const Subto = () => {
+  // Array of card data
+  const cardData = [
+    {
+      name: "Adicolor Classics Joggers",
+      bgImage: sub0,
+      category: "Dress",
+      price: 63.85,
+    },
+    {
+      name: "Nike Sportswear Futura Luxe",
+      bgImage: sub1,
+      category: "Bag",
+      price: 130,
+    },
+    {
+      name: "Geometric print Scarf",
+      bgImage: sub2,
+      category: "Scarf",
+      price: 53,
+    },
+    {
+      name: "Yellow Reserved Hoodie",
+      bgImage: sub3,
+      category: "Dress",
+      oldprice: 364,
+      newprice: 155,
+      tag: "Sale",
+      bgColor: "#1E2832",
+    },
+    {
+      name: "Basic Dress Green",
+      bgImage: sub4,
+      category: "Dress",
+      price: 236,
+      tag: "Hot",
+      bgColor: "#FF6F61",
+    },
+    {
+      name: "Nike Air Zoom Pegasus",
+      bgImage: sub5,
+      category: "Shoe",
+      oldprice: 220,
+      newprice: 198,
+      tag: "Sale",
+      bgColor: "#1E2832",
+    },
+    {
+      name: "Nike Repel Miler",
+      bgImage: sub6,
+      category: "Dress",
+      price: 120.5,
+    },
+    {
+      name: "Nike Sportswear Futura Luxe",
+      bgImage: sub7,
+      category: "Glasses",
+      price: 160,
+    },
+  ];
+
   return (
     <StyledSub>
       <p className="title">Or subscribe to the newsletter</p>
@@ -65,7 +125,6 @@ export const Subto = () => {
           <p className="m-title">Jacket</p>
         </div>
         <Button
-          borderRadius={"none"}
           textColor={"#fff"}
           bgColor={"#1E2832"}
           width={"92px"}
@@ -75,62 +134,20 @@ export const Subto = () => {
         </Button>
       </div>
       <div className="card">
-        <CardSub
-          name={"Adicolor Classics Joggers"}
-          bgImage={sub0}
-          category={"Dress"}
-          price={63.85}
-        />
-        <CardSub
-          name={"Nike Sportswear Futura Luxe"}
-          bgImage={sub1}
-          category={"Bag"}
-          price={130}
-        />
-        <CardSub
-          name={"Geometric print Scarf"}
-          bgImage={sub2}
-          category={"Scarf"}
-          price={53}
-        />
-        <CardSub
-          name={"Yellow Reserved Hoodie"}
-          bgImage={sub3}
-          category={"Dress"}
-          oldprice={364}
-          newprice={155}
-          tag={"Sale"}
-          bgColor={"#1E2832"}
-        />
-        <CardSub
-          name={"Basic Dress Green"}
-          bgImage={sub4}
-          category={"Dress"}
-          price={236}
-          tag={"Hot"}
-          bgColor={"#FF6F61"}
-        />
-        <CardSub
-          name={"Nike Air Zoom Pegasus"}
-          bgImage={sub5}
-          category={"Shoe"}
-          oldprice={220}
-          newprice={198}
-          tag={"Sale"}
-          bgColor={"#1E2832"}
-        />
-        <CardSub
-          name={"Nike Repel Miler"}
-          bgImage={sub6}
-          category={"Dress"}
-          price={120.5}
-        />
-        <CardSub
-          name={"Nike Sportswear Futura Luxe"}
-          bgImage={sub7}
-          category={"Glasses"}
-          price={160}
-        />
+        {/* Map over the card data array */}
+        {cardData.map((card, index) => (
+          <CardSub
+            key={index}
+            name={card.name}
+            bgImage={card.bgImage}
+            category={card.category}
+            price={card.price}
+            oldprice={card.oldprice}
+            newprice={card.newprice}
+            tag={card.tag}
+            bgColor={card.bgColor}
+          />
+        ))}
       </div>
     </StyledSub>
   );

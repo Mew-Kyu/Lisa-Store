@@ -55,7 +55,6 @@ export const BannerAds = () => {
           offered at the reopened Giorgio Armani boutique in Los Angeles.
         </p>
         <Button
-          borderRadius={"none"}
           width={"237px"}
           height={"72px"}
           textColor={"#1E2832"}

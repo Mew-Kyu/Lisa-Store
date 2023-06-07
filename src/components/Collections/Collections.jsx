@@ -67,7 +67,6 @@ export const Collections = () => {
           textColor={"#fff"}
           width={"223px"}
           height={"72px"}
-          borderRadius={0}
           fontSize={29}
           bgColor={"#1E2832"}
         >

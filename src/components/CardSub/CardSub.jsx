@@ -88,12 +88,18 @@ const StyledCard = styled.div`
     filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(343deg)
       brightness(106%) contrast(106%);
   }
+  .tag {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+  }
   .shop-action2 {
     display: flex;
     align-items: center;
     span {
       color: #fff;
-      font-size: 20px;
+      font-weight: 600;
+      font-size: 18px;
     }
   }
   .shop-action2:hover {

@@ -9,6 +9,7 @@ import item0 from "assets/explore/item-category-0.svg";
 import item1 from "assets/explore/item-category-1.svg";
 import item2 from "assets/explore/item-category-2.svg";
 import item3 from "assets/explore/item-category-3.svg";
+import { CardExplore } from "components/CardExplore";
 
 const StyledExplore = styled.div`
   padding: 0 10%;
@@ -45,6 +46,29 @@ const StyledExplore = styled.div`
   }
 `;
 
+const dataItem = [
+  {
+    image: item0,
+    name: "pants",
+    total: 200,
+  },
+  {
+    image: item1,
+    name: "coat",
+    total: 520,
+  },
+  {
+    image: item2,
+    name: "shirt",
+    total: 320,
+  },
+  {
+    image: item3,
+    name: "jacket",
+    total: 103,
+  },
+];
+
 export const Explore = () => {
   return (
     <StyledExplore>
@@ -57,12 +81,17 @@ export const Explore = () => {
       </div>
       <div className="allpic">
         <span className="title">Explore new and popular styles</span>
-        <img src={itemx} alt="Manto" />
+        <div>
+          <CardExplore image={itemx} name={"manto"} total={86} />
+        </div>
         <div className="item">
-          <img src={item0} alt="Pants" />
-          <img src={item1} alt="Coat" />
-          <img src={item2} alt="Shirt" />
-          <img src={item3} alt="Jacket" />
+          {dataItem.map((item) => (
+            <CardExplore
+              image={item.image}
+              name={item.name}
+              total={item.total}
+            />
+          ))}
         </div>
       </div>
     </StyledExplore>

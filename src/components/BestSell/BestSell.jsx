@@ -2,9 +2,80 @@ import { Button } from "components/Button";
 import { CardSub } from "components/CardSub";
 import { styled } from "styled-components";
 import sub1 from "assets/sub/sub1.svg";
+import sub2 from "assets/sub/sub2.svg";
 import sub3 from "assets/sub/sub3.svg";
 import sub4 from "assets/sub/sub4.svg";
 import sub5 from "assets/sub/sub5.svg";
+import sub6 from "assets/sub/sub6.svg";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+const cardSubData = [
+  {
+    name: "Basic Dress Green",
+    bgImage: sub4,
+    category: "Dress",
+    price: 236,
+    tag: "Hot",
+    bgColor: "#FF6F61",
+  },
+  {
+    name: "Nike Sportswear Futura Luxe",
+    bgImage: sub1,
+    category: "Bag",
+    price: 130,
+  },
+  {
+    name: "Yellow Reserved Hoodie",
+    bgImage: sub3,
+    category: "Dress",
+    oldprice: 364,
+    newprice: 155,
+    tag: "Sale",
+    bgColor: "#1E2832",
+  },
+  {
+    name: "Nike Air Zoom Pegasus",
+    bgImage: sub5,
+    category: "Shoe",
+    oldprice: 220,
+    newprice: 198,
+    tag: "Sale",
+    bgColor: "#1E2832",
+  },
+  {
+    name: "Nike Repel Miler",
+    bgImage: sub6,
+    category: "Dress",
+    price: 120.5,
+  },
+  {
+    name: "Geometric print Scarf",
+    bgImage: sub2,
+    category: "Scarf",
+    price: 53,
+  },
+];
 
 const StyledBest = styled.div`
   padding: 0 10%;
@@ -41,9 +112,10 @@ const StyledBest = styled.div`
     background-color: #ff6f61;
   }
   .card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
+  }
+  .carousel-item {
+    width: 300px;
   }
 `;
 
@@ -59,7 +131,6 @@ export const BestSell = () => {
           <p className="m-title">Jacket</p>
         </div>
         <Button
-          borderRadius={"none"}
           textColor={"#fff"}
           bgColor={"#1E2832"}
           width={"92px"}
@@ -69,38 +140,26 @@ export const BestSell = () => {
         </Button>
       </div>
       <div className="card">
-        <CardSub
-          name={"Basic Dress Green"}
-          bgImage={sub4}
-          category={"Dress"}
-          price={236}
-          tag={"Hot"}
-          bgColor={"#FF6F61"}
-        />
-        <CardSub
-          name={"Nike Sportswear Futura Luxe"}
-          bgImage={sub1}
-          category={"Bag"}
-          price={130}
-        />
-        <CardSub
-          name={"Yellow Reserved Hoodie"}
-          bgImage={sub3}
-          category={"Dress"}
-          oldprice={364}
-          newprice={155}
-          tag={"Sale"}
-          bgColor={"#1E2832"}
-        />
-        <CardSub
-          name={"Nike Air Zoom Pegasus"}
-          bgImage={sub5}
-          category={"Shoe"}
-          oldprice={220}
-          newprice={198}
-          tag={"Sale"}
-          bgColor={"#1E2832"}
-        />
+        <Carousel
+          responsive={responsive}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+        >
+          {cardSubData.map((card, index) => (
+            <CardSub
+              key={index}
+              name={card.name}
+              bgImage={card.bgImage}
+              category={card.category}
+              price={card.price}
+              oldprice={card.oldprice}
+              newprice={card.newprice}
+              tag={card.tag}
+              bgColor={card.bgColor}
+            />
+          ))}
+        </Carousel>
       </div>
     </StyledBest>
   );

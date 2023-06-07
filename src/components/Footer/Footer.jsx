@@ -12,7 +12,7 @@ const StyledFooter = styled.div`
   flex-direction: column;
   justify-content: space-between;
   .top {
-    padding: 240px 10% 0 10%;
+    margin: 240px 10% 0 10%;
     display: flex;
     justify-content: space-between;
   }
