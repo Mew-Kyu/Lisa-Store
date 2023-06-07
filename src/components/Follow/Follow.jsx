@@ -54,10 +54,25 @@ const StyledFollow = styled.div`
     gap: 20px;
   }
 
+  @media (min-width: 1024px) and (max-width: 1919px){
+    .title {
+      font-size: 35px;
+    }
+  }
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 0;
     .title {
       font-size: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    height: 396px;
+    .title {
+      font-size: 25px;
+    }
+    .tag {
+      font-size: 20px;
     }
   }
 `;

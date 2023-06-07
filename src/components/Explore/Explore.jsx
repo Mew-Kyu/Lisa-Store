@@ -47,6 +47,18 @@ const StyledExplore = styled.div`
     width: 50%;
   }
 
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    .title {
+      left: 5%;
+    }
+    .item {
+      width: 100%;
+      justify-content: center;
+    }
+    .allbrand {
+      justify-content: center;
+    }
+  }
   @media (min-width: 768px) and (max-width: 1023px) {
     padding: 0;
     .title {
@@ -54,13 +66,11 @@ const StyledExplore = styled.div`
     }
     .item {
       width: 100%;
-      display: flex;
       justify-content: center;
     }
     .allbrand {
       justify-content: center;
     }
-    text-align: center;
   }
   @media (max-width: 767px) {
     padding: 0;

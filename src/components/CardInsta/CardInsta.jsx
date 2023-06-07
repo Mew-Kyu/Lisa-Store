@@ -25,6 +25,19 @@ const StyledCard = styled.div`
       opacity: 1;
     }
   }
+
+  @media (max-width: 767px) {
+    width: 100px;
+    height: 100px;
+    .main {
+      width: 100%;
+      height: 100%;
+    }
+    .insta {
+      height: 30px;
+      width: 30px;
+    }
+  }
 `;
 
 export const CardInsta = ({ image }) => {

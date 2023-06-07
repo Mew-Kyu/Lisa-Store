@@ -83,14 +83,44 @@ const StyledFooter = styled.div`
     background: #ff6f61;
   }
 
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    .top {
+      margin: 120px 5% 0 5%;
+    }
+  }
   @media (min-width: 768px) and (max-width: 1023px) {
     .top {
       margin: 60px 5% 0 5%;
     }
   }
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
+    height: 284px;
+    .top {
+      margin: 30px 5% 0 5%;
+    }
     .pay {
       display: none;
+    }
+    .col {
+      justify-content: space-around;
+    }
+    .logo {
+      font-size: 16px;
+    }
+    .des,
+    .title {
+      font-size: 8px;
+    }
+    .social {
+      width: 100%;
+      width: 15px;
+      height: 15px;
+    }
+    .child-title p {
+      font-size: 7px;
+    }
+    .bottom {
+      margin: 0;
     }
   }
 `;
