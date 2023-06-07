@@ -53,6 +53,13 @@ const StyledFollow = styled.div`
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0;
+    .title {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const Follow = () => {

@@ -82,6 +82,17 @@ const StyledFooter = styled.div`
   .totop:hover {
     background: #ff6f61;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .top {
+      margin: 60px 5% 0 5%;
+    }
+  }
+  @media (max-width: 767px){
+    .pay {
+      display: none;
+    }
+  }
 `;
 
 export const Footer = () => {

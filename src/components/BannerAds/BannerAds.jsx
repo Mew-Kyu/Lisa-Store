@@ -41,6 +41,29 @@ const StyledAds = styled.div`
     transition: 0.3s;
     background-color: #ff6f61;
   }
+
+  @media (max-width: 767px) {
+    height: 338px;
+    .content {
+      padding: 0;
+      gap: 0;
+      justify-content: center;
+    }
+    .logo {
+      width: 300px;
+    }
+    .title {
+      width: 120px;
+    }
+    .des {
+      font-size: 13px;
+    }
+    Button {
+      font-size: 18px;
+      width: 135px;
+      height: 50px;
+    }
+  }
 `;
 
 export const BannerAds = () => {

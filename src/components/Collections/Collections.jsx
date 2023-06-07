@@ -49,6 +49,27 @@ const StyledCol = styled.div`
     right: 0;
     top: 35%;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 565px;
+    .banner {
+      width: 221px;
+      height: 281px;
+    }
+  }
+  @media (max-width: 767px) {
+    height: 500px;
+    .banner {
+      display: none;
+    }
+    .title {
+      font-size: 50px;
+      margin: 0;
+    }
+    .des {
+      font-size: 25px;
+    }
+  }
 `;
 
 export const Collections = () => {

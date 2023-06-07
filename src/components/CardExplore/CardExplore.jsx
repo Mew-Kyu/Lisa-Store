@@ -43,7 +43,7 @@ const StyledCard = styled.div`
 export const CardExplore = ({ image, name, total, bgColor, tag }) => {
   return (
     <StyledCard>
-      <img src={image} alt="styles" />
+      <img className="mid-img" src={image} alt="styles" />
       <div className="tag" style={{ background: `${bgColor}` }}>
         {tag}
       </div>

@@ -4,6 +4,7 @@ import insta from "assets/follow/insta.svg";
 const StyledCard = styled.div`
   width: 200px;
   height: 200px;
+  position: relative;
   cursor: pointer;
   .insta {
     height: 50px;
@@ -18,7 +19,8 @@ const StyledCard = styled.div`
     transition: opacity 0.3s;
   }
   &:hover {
-    filter: brightness(50%);
+    .main {
+      filter: brightness(50%);}
     .insta {
       opacity: 1;
     }
@@ -28,7 +30,7 @@ const StyledCard = styled.div`
 export const CardInsta = ({ image }) => {
   return (
     <StyledCard>
-      <img src={image} alt="insta" />
+      <img className="main" src={image} alt="insta" />
       <img className="insta" src={insta} alt="insta icon" />
     </StyledCard>
   );

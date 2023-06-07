@@ -56,6 +56,14 @@ const HeaderStyled = styled.div`
         brightness(101%) contrast(101%);
     }
   }
+
+  @media (max-width: 767px) {
+    .content {
+      height: 120px;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
 `;
 export const Header = () => {
   return (

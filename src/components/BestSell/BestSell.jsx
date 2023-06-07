@@ -116,6 +116,35 @@ const StyledBest = styled.div`
   .carousel-item {
     width: 300px;
   }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 5%;
+  }
+  @media (max-width: 767px) {
+    .sub-title {
+      gap: 10px;
+    }
+    .title {
+      font-size: 25px;
+    }
+    .m-title {
+      font-size: 13px;
+    }
+    .card {
+      width: 320px;
+    }
+    .pic img {
+      width: 100%;
+    }
+    Button {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+    Button p {
+      display: none;
+    }
+  }
 `;
 
 export const BestSell = () => {

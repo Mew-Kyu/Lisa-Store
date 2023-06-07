@@ -18,10 +18,12 @@ const StyledExplore = styled.div`
     padding: 90px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .allpic {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-left: 50px;
     gap: 20px;
     position: relative;
@@ -43,6 +45,50 @@ const StyledExplore = styled.div`
     flex-wrap: wrap;
     gap: 15px;
     width: 50%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0;
+    .title {
+      display: none;
+    }
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .allbrand {
+      justify-content: center;
+    }
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+    .title {
+      display: none;
+    }
+    .allbrand {
+      justify-content: center;
+      padding: 0;
+    }
+    .allbrand img {
+      width: 75px;
+      height: 26.25px;
+    }
+    .allpic {
+      padding: 0;
+    }
+    .topmodel div img {
+      width: 300px;
+      padding: 0;
+    }
+    .item div img {
+      width: 300px;
+    }
+    .item {
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 
@@ -83,8 +129,13 @@ export const Explore = () => {
       </div>
       <div className="allpic">
         <span className="title">Explore new and popular styles</span>
-        <div>
-          <CardExplore image={itemx} name={"manto"} total={86} />
+        <div className="topmodel">
+          <CardExplore
+            className="topmodel"
+            image={itemx}
+            name={"manto"}
+            total={86}
+          />
         </div>
         <div className="item">
           {dataItem.map((item) => (
