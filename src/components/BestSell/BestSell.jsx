@@ -79,7 +79,6 @@ const cardSubData = [
 
 const StyledBest = styled.div`
   padding: 0 10%;
-  font-family: "Open Sans";
   .title {
     font-weight: 500;
     font-size: 50px;

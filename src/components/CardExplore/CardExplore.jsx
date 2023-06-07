@@ -21,6 +21,17 @@ const StyledCard = styled.div`
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
   }
+  .tag {
+    width: 52px;
+    height: 24px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &:hover {
     .number {
       visibility: visible;
@@ -29,10 +40,13 @@ const StyledCard = styled.div`
   }
 `;
 
-export const CardExplore = ({ image, name, total }) => {
+export const CardExplore = ({ image, name, total, bgColor, tag }) => {
   return (
     <StyledCard>
       <img src={image} alt="styles" />
+      <div className="tag" style={{ background: `${bgColor}` }}>
+        {tag}
+      </div>
       <div className="number">
         <p>{name}</p>
         <p>{total} Product</p>

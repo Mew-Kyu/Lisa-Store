@@ -56,6 +56,8 @@ const dataItem = [
     image: item1,
     name: "coat",
     total: 520,
+    tag: "Sale",
+    bgColor: "#1E2832",
   },
   {
     image: item2,
@@ -90,6 +92,8 @@ export const Explore = () => {
               image={item.image}
               name={item.name}
               total={item.total}
+              tag={item.tag}
+              bgColor={item.bgColor}
             />
           ))}
         </div>

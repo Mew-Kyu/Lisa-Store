@@ -13,9 +13,7 @@ import sub7 from "assets/sub/sub7.svg";
 
 const StyledSub = styled.div`
   padding: 0 10%;
-  font-family: "Open Sans";
   .title {
-    font-family: "Roboto";
     font-weight: 500;
     font-size: 50px;
     text-align: center;
