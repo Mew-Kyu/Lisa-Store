@@ -57,6 +57,7 @@ const StyledFooter = styled.div`
   .bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 90px 0;
   }
   .inc {
@@ -67,12 +68,19 @@ const StyledFooter = styled.div`
     gap: 10px;
   }
   .totop {
+    width: 150px;
+    height: 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     color: #fff;
     font-size: 16px;
+    transition: 0.3s;
     cursor: pointer;
+  }
+  .totop:hover {
+    background: #ff6f61;
   }
 `;
 
@@ -127,7 +135,12 @@ export const Footer = () => {
       <div className="bottom">
         <p className="inc">© 2023 LISA , Inc.</p>
         <img className="pay" src={payment} alt="payment" />
-        <div className="totop">
+        <div
+          className="totop"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <p>Scroll To Top</p>
           <img src={top} alt="top" />
         </div>

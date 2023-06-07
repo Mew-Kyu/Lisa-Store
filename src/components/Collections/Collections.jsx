@@ -48,7 +48,6 @@ const StyledCol = styled.div`
     position: absolute;
     right: 0;
     top: 35%;
-    /* transform: rotate(-10deg); */
   }
 `;
 
