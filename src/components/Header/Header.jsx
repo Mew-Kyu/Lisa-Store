@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 
 const HeaderStyled = styled.div`
   background: #f0f0f0;
-  padding: 0% 10%;
+  padding: 22px 10%;
   .content {
     display: flex;
     justify-content: space-between;
@@ -144,6 +144,7 @@ const HeaderStyled = styled.div`
     }
   }
   @media (max-width: 767px) {
+    padding: 0 10%;
     .content {
       height: 120px;
       flex-direction: column;

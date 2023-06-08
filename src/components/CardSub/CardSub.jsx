@@ -11,11 +11,13 @@ const StyledCard = styled.div`
     font-weight: 600;
     font-size: 16px;
     color: #000;
+    margin: 18px 10px;
   }
   .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10px;
   }
   .category {
     font-weight: 400;
