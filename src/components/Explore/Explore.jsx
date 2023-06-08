@@ -60,7 +60,7 @@ const StyledExplore = styled.div`
     }
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    padding: 0;
+    padding: 0 5%;
     .title {
       display: none;
     }
@@ -79,11 +79,11 @@ const StyledExplore = styled.div`
     }
     .allbrand {
       justify-content: center;
-      padding: 0;
+      padding: 10px;
     }
     .allbrand img {
-      width: 75px;
-      height: 26.25px;
+      width: 100px;
+      height: 35px;
     }
     .allpic {
       padding: 0;

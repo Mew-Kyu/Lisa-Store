@@ -135,6 +135,11 @@ const HeaderStyled = styled.div`
     }
     .search-bar {
       width: 100%;
+      order: 1;
+    }
+    .brand,
+    .accs {
+      order: 0;
     }
     .btn-search:focus ~ .input-search {
       width: 100%;
@@ -144,21 +149,28 @@ const HeaderStyled = styled.div`
     }
   }
   @media (max-width: 767px) {
-    padding: 0 10%;
+    padding: 11px 10%;
     .content {
-      height: 120px;
-      flex-direction: column;
-      align-items: start;
+      height: 90px;
+      flex-wrap: wrap;
     }
     .line {
       margin-top: 35px;
     }
     .icon-size {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 30px;
     }
     .search-bar {
       width: 80%;
+      order: 1;
+    }
+    .brand,
+    .accs {
+      order: 0;
+    }
+    .shop span, .acc span {
+      display: none;
     }
     .btn-search:focus ~ .input-search {
       width: 100%;
