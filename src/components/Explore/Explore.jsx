@@ -46,13 +46,24 @@ const StyledExplore = styled.div`
     gap: 15px;
     width: 50%;
   }
-
-  @media (min-width: 1024px) and (max-width: 1919px) {
+  @media (min-width: 1600px) and (max-width: 1919px) {
     .title {
-      left: 5%;
+      left: -4%;
+    }
+    .allpic {
+      justify-content: center;
+      width: 1500px;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1519px) {
+    .title {
+      left: -30px;
+    }
+    .allpic {
+      justify-content: center;
     }
     .item {
-      width: 100%;
+      width: 700px;
       justify-content: center;
     }
     .allbrand {

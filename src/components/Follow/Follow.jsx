@@ -54,7 +54,12 @@ const StyledFollow = styled.div`
     gap: 20px;
   }
 
-  @media (min-width: 1024px) and (max-width: 1919px){
+  @media (min-width: 1600px) and (max-width: 1919px) {
+    .allinsta {
+      gap: 0;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1519px){
     .title {
       font-size: 35px;
     }

@@ -73,7 +73,7 @@ const StyledCard = styled.div`
   .shopnow {
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 55px;
     bottom: 0;
     display: flex;
     justify-content: space-around;
@@ -84,8 +84,8 @@ const StyledCard = styled.div`
     transition: visibility 0s, opacity 0.5s linear;
   }
   .action-img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding-right: 10px;
     filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(343deg)
       brightness(106%) contrast(106%);
@@ -100,7 +100,7 @@ const StyledCard = styled.div`
     align-items: center;
     span {
       color: #fff;
-      font-weight: 600;
+      font-weight: 400;
       font-size: 18px;
     }
   }
